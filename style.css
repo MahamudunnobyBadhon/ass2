@@ -1,5 +1,16 @@
-
+/* google font poppins import */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+
+/* style in body section  */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #FFFFFF;
+    
+}
+
+/* style in main section  */
 main{
     display: flex;
     flex-direction: column;
@@ -7,11 +18,24 @@ main{
     align-content: center;
     align-items: center;
 }
-body{
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    background-color: #FFFFFF;
+/* heading 1 tag style  */
+h1{
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: #18191F;
 }
+
+/* p  tag style  */
+p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* .................................
+.....style in top section start ......
+................................  */
 .top-section{
     margin: 0%;
     display: flex;
@@ -19,19 +43,32 @@ body{
     background-color: #2D25A0;
     margin-bottom: 70px;
 }
-.top-section-text{
-    margin: 0;
-    padding-left: 156px;
-    padding-top: 207px;
-}
+
+/* style in top section heading text  */
 .top-heading{
     font-size: 64px;
     font-weight: 700;
     color: white;
 }
+/* style half of the top banner  */
+.half-width{
+    width: 50%;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+/* style in top section text  */
+.top-section-text{
+    margin: 0;
+    padding-left: 156px;
+    padding-top: 207px;
+}
+/* style in 2021 year */
 .three{
     margin-bottom: 27px;
 }
+
+/* style in watch tv anchor  */
 #high-btn-id{
     width: 168px;
     height: 44px;
@@ -43,29 +80,15 @@ body{
     color: rgb(0, 0, 0);
     background-color: sandybrown;
 }
- .hoveritem:hover{
+
+/* style transform in watch tv anchor */
+.hoveritem:hover{
     transform: scale(1.2) rotate(00deg);
     transform-origin: 0, 0, 0, 0;
     transition: transform 1.5s ease-in-out ;
 } 
-/* .hide-text{
-    display: none;
-} */
-/* a:hover .hide-text{
-    display: block;
-    transform: scale(1.5) rotate(0deg);
-    transition: transform 5s linear;
-} */
-/* a:hover i{
-    color: red;
-    transform: scale(1.5); 
-    transition: transform 3s ease;
-} */
-.half-width{
-    width: 50%;
-    padding-top: 20px;
-    padding-right: 30px;
-}
+
+/* style the right image of top banner  */
 .half-width img{
     width: 556px;
     height: 438px;
@@ -73,10 +96,15 @@ body{
     padding-bottom: 86px;
     padding-right: 140px;
 }
+/* top banner end ................... */
+
+
+/* three different section but same layout  */
 .sec-player, .highlights, .sec-news{
     width: 100%;
     position: relative;
 }
+/* grid view in player, highlight  */
 .players, .highlights-matches{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -86,16 +114,35 @@ body{
     margin-right: 210px;
 
 }
-.match:hover .match-image{
-    transform: scale(1.2) rotate(20deg);
-    transition: transform 1.5s ease-in;
-}
+/* individual player  */
 .player{
     width: 330px;
     height: 474px;
     border: 1px solid navajowhite;
     box-shadow: 10px 10px gainsboro;
 }
+/* player image size  */
+.player img{
+    width: 300px;
+    height: 256px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* player image hovering transform effect  */
+.player:hover .player-image{
+    transform: scale(1.2);
+    transition: transform 2s ease-in-out;
+}
+/* player description  */
+.player-description{
+    margin-left: 15px;
+    margin-top: 0%;
+}
+
+
+/* individual match */
 .match{
     display: grid;
     grid-template-columns: repeat(1,1fr);
@@ -104,23 +151,16 @@ body{
     border: 1px solid navajowhite;
     box-shadow: 10px 10px gainsboro;
 }
-.newses{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin-left: 180px ;
+/* heading of highlights and news  */
+.highlight-text, .news-text{
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 180px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
 
-}
-.player img{
-    width: 300px;
-    height: 256px;
-    margin-top: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-.player:hover .player-image{
-    transform: scale(1.2);
-    transition: transform 2s ease-in;
-}
+/* match images  */
 .match img{
     width: 300px;
     height: 256px;
@@ -128,57 +168,12 @@ body{
     margin-left: 15px;
     margin-right: 15px;
 }
-.player-description{
-    margin-left: 15px;
-    margin-top: 0%;
+/* transform and transition effect in match image */
+.match:hover .match-image{
+    transform: scale(1.2) rotate(360deg);
+    transition: transform 1.5s ease-in-out;
 }
-h1{
-    font-size: 28px;
-    font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 0;
-    color: #18191F;
-}
-p{
-    font-size: 16px;
-    font-weight: 400;
-}
-.footer{
-    margin-top: 180px;
-    margin-bottom: 63px;
-    width: 483px;
-    height: 213px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-}
-.footer-img img{
-    width: 483px;
-    height: 110px;
-}
-.footer-font-awesome, .copyright{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
-.footer-font-awesome i{
-    margin-left: 20px;
-    color: #969BAB;
-}
-.copyright{
-    font-size: 18px;
-    font-weight: 400;
-    color: #000000;
-
-}
-.highlight-text, .news-text{
-    font-size: 24px;
-    font-weight: 700;
-    margin-left: 180px;
-    margin-top: 70px;
-}
+/* anchor text style  */
 a{
     text-decoration: none;
     size: 40px;
@@ -192,7 +187,74 @@ a{
     color: rgb(0, 0, 0);
     background-color: sandybrown;
 }
+ 
+/* news section  */
+.newses{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 180px ;
+
+}
+
+/* ............main part end .................. */
+
+
+/* footer part start  */
+.footer{
+    margin-top: 180px;
+    margin-bottom: 63px;
+    width: 483px;
+    height: 213px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+/* footer image  */
+.footer-img img{
+    width: 483px;
+    height: 110px;
+}
+
+/* font awesome icon and copyright style  */
+.footer-font-awesome, .copyright{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* font awesome icon's i tag coloring  */
+.footer-font-awesome i{
+    margin-left: 20px;
+    color: #969BAB;
+}
+
+/* style in copyright  */
+.copyright{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+
+}
+
+/* media query for mobile screen  */
   @media only screen and (max-width: 688px){
+    
+    h1{
+        font-size: 28px;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 0;
+        color: #18191F;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    /* mobile top section  */
     .top-section{
         width: 360px;
         display: flex;
@@ -203,24 +265,36 @@ a{
         margin-bottom: 47px;
         
     }
+    /* half side  */
+    .half-width{
+        width: 360px;
+    }
+    /* top section text  */
     .top-section-text{
         padding-top: 112px;
         width: 278px;
         padding-left: 16px;
     }
-    .half-width{
-        width: 360px;
+    /* top heading  */
+    .top-heading{
+        font-size: 36px;
+        font-weight: 700;
+        color: white;
     }
+    /* half width images  */
     .half-width img{
         width: 329px;
         padding-left: 16px;
         padding-bottom: 61.83px;
     }
+    /* watch tv red  */
     a:hover a{
         color: red;
         transform: scale(1.5); 
         transition: transform 3s ease;
     }
+
+    /* player, match , news size fixing  */
     .players, .highlights-matches, .newses{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -228,17 +302,19 @@ a{
         justify-content: center;
         align-content: center;
     }
+    /* player style  */
     .player{
         width: 330px;
         height: 474px;
         border: 1px solid navajowhite;
         box-shadow: 10px 10px gainsboro;
     }
-    .match{
-        width: 330px;
-        border: 1px solid navajowhite;
-        box-shadow: 10px 10px gainsboro;
+    /* description of player  */
+    .player-description{
+        margin-left: 15px;
+        margin-top: 0%;
     }
+    /* player image  */
     .player img{
         width: 300px;
         height: 256px;
@@ -246,6 +322,22 @@ a{
         margin-left: 15px;
         margin-right: 15px;
     }
+    /* match style  */
+    .match{
+        width: 330px;
+        border: 1px solid navajowhite;
+        box-shadow: 10px 10px gainsboro;
+    }
+      /* heading text  */
+      .highlight-text, .news-text{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+    
+    /* match image style  */
     .match-image img{
         width: 300px;
         margin-top: 15px;
@@ -253,6 +345,7 @@ a{
         margin-right: 15px;
         margin-bottom: 5px;
     }
+    /* new start  */
     .newses{
         display:flex;
         flex-direction: column;
@@ -262,45 +355,24 @@ a{
         margin-left: 30px;
         
     }
+     /* news individual  */
     .news{
         width: 330px;
         margin-top: 20px;
     }
+    /* youtube video  */
     iframe{
         width: 330px;  
     }
     
-    .player-description{
-        margin-left: 15px;
-        margin-top: 0%;
-    }
-    h1{
-        font-size: 28px;
-        font-weight: 700;
-        margin-top: 10px;
-        margin-bottom: 0;
-        color: #18191F;
-    }
-    .highlight-text, .news-text{
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        margin-left: 0;
-    }
-    p{
-        font-size: 16px;
-        font-weight: 400;
-    }
-    .top-heading{
-        font-size: 36px;
-        font-weight: 700;
-        color: white;
-    }
+    
+  
+    /* footer tag  */
     .footer{
         margin-top: 40px;
         width: 330px;
     }
+     /* footer image style  */
     .footer-img img{
         width: 330px;
     }
