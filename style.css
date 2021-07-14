@@ -43,11 +43,24 @@ body{
     color: rgb(0, 0, 0);
     background-color: sandybrown;
 }
-a:hover i{
+ .hoveritem:hover{
+    transform: scale(1.2) rotate(00deg);
+    transform-origin: 0, 0, 0, 0;
+    transition: transform 1.5s ease-in-out ;
+} 
+/* .hide-text{
+    display: none;
+} */
+/* a:hover .hide-text{
+    display: block;
+    transform: scale(1.5) rotate(0deg);
+    transition: transform 5s linear;
+} */
+/* a:hover i{
     color: red;
     transform: scale(1.5); 
     transition: transform 3s ease;
-}
+} */
 .half-width{
     width: 50%;
     padding-top: 20px;
@@ -75,7 +88,7 @@ a:hover i{
 }
 .match:hover .match-image{
     transform: scale(1.2) rotate(20deg);
-    transition: transform 3s ease-in;
+    transition: transform 1.5s ease-in;
 }
 .player{
     width: 330px;
@@ -154,7 +167,7 @@ p{
     font-size: 18px;
     font-weight: 400;
     color: #000000;
-    
+
 }
 .highlight-text, .news-text{
     font-size: 24px;
