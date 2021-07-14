@@ -31,7 +31,7 @@ body{
 .three{
     margin-bottom: 27px;
 }
-a{
+#high-btn-id{
     width: 168px;
     height: 44px;
     padding: 10px 15px;
@@ -59,11 +59,11 @@ a:hover i{
     padding-bottom: 86px;
     padding-right: 140px;
 }
-.sec-player{
+.sec-player, .highlights, .sec-news{
     width: 100%;
     position: relative;
 }
-.players{
+.players, .highlights-matches{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 30px;
@@ -72,13 +72,38 @@ a:hover i{
     margin-right: 210px;
 
 }
+.match:hover .match-image{
+    transform: scale(1.2) rotate(20deg);
+    transition: transform 3s ease-in;
+}
 .player{
     width: 330px;
     height: 474px;
     border: 1px solid navajowhite;
     box-shadow: 10px 10px gainsboro;
 }
+.match{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 20px;
+    width: 330px;
+    border: 1px solid navajowhite;
+    box-shadow: 10px 10px gainsboro;
+}
+.newses{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 180px ;
+
+}
 .player img{
+    width: 300px;
+    height: 256px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.match img{
     width: 300px;
     height: 256px;
     margin-top: 15px;
@@ -130,7 +155,25 @@ p{
     color: #000000;
     ;
 }
-
+.highlight-text, .news-text{
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 180px;
+    margin-top: 70px;
+}
+a{
+    text-decoration: none;
+    size: 40px;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid salmon;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    color: rgb(0, 0, 0);
+    background-color: sandybrown;
+}
   @media only screen and (max-width: 688px){
     .top-section{
         width: 360px;
@@ -160,7 +203,7 @@ p{
         transform: scale(1.5); 
         transition: transform 3s ease;
     }
-    .players{
+    .players, .highlights-matches, .newses{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         grid-row-gap: 24px;
@@ -173,6 +216,11 @@ p{
         border: 1px solid navajowhite;
         box-shadow: 10px 10px gainsboro;
     }
+    .match{
+        width: 330px;
+        border: 1px solid navajowhite;
+        box-shadow: 10px 10px gainsboro;
+    }
     .player img{
         width: 300px;
         height: 256px;
@@ -180,6 +228,32 @@ p{
         margin-left: 15px;
         margin-right: 15px;
     }
+    .match-image img{
+        width: 300px;
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 5px;
+    }
+    .newses{
+        margin: 0;
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 0;
+        margin-left: 30px;
+        margin-bottom: 0;
+        
+    }
+    .news{
+        width: 300px;
+        height: 300px;
+        margin-top: 20px;
+    }
+    iframe{
+        width: 300px;
+        height: 300px;
+    }
+    
     .player-description{
         margin-left: 15px;
         margin-top: 0%;
@@ -191,6 +265,13 @@ p{
         margin-bottom: 0;
         color: #18191F;
     }
+    .highlight-text, .news-text{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
     p{
         font-size: 16px;
         font-weight: 400;
@@ -201,6 +282,7 @@ p{
         color: white;
     }
     .footer{
+        margin-top: 40px;
         width: 360px;
     }
     .footer-img img{
