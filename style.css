@@ -8,7 +8,7 @@ body{
 .top-section{
     margin: 0%;
     display: flex;
-    width: 100%;
+    width: 1440px;
     background-color: #2D25A0;
 }
 .top-section-text{
@@ -98,16 +98,22 @@ p{
         flex-direction: column;
         overflow: auto;
         overflow-x: hidden;
+        justify-content: center;
+        margin-bottom: 47px;
+        
     }
     .top-section-text{
+        padding-top: 112px;
         width: 278px;
         padding-left: 16px;
     }
     .half-width{
-        width: 100%;
+        width: 360px;
     }
     .half-width img{
         width: 329px;
+        padding-left: 16px;
+        padding-bottom: 61.83px;
     }
     a:hover a{
         color: red;
@@ -123,6 +129,7 @@ p{
     .player{
         width: 330px;
         height: 474px;
+        margin-bottom: 24px;
         border: 1px solid navajowhite;
         box-shadow: 10px 10px gainsboro;
     }
