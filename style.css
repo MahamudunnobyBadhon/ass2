@@ -1,6 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
-
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -10,6 +16,7 @@ body{
     display: flex;
     width: 1440px;
     background-color: #2D25A0;
+    margin-bottom: 70px;
 }
 .top-section-text{
     margin: 0;
@@ -21,8 +28,12 @@ body{
     font-weight: 700;
     color: white;
 }
+.three{
+    margin-bottom: 27px;
+}
 a{
-    width: 150px;
+    width: 168px;
+    height: 44px;
     padding: 10px 15px;
     font-size: 16px;
     font-weight: 500;
@@ -89,7 +100,36 @@ p{
     font-size: 16px;
     font-weight: 400;
 }
-
+.footer{
+    margin-top: 180px;
+    margin-bottom: 63px;
+    width: 483px;
+    height: 213px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.footer-img img{
+    width: 483px;
+    height: 110px;
+}
+.footer-font-awesome, .copyright{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.footer-font-awesome i{
+    margin-left: 20px;
+    color: #969BAB;
+}
+.copyright{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    ;
+}
 
   @media only screen and (max-width: 688px){
     .top-section{
@@ -154,5 +194,16 @@ p{
     p{
         font-size: 16px;
         font-weight: 400;
+    }
+    .top-heading{
+        font-size: 36px;
+        font-weight: 700;
+        color: white;
+    }
+    .footer{
+        width: 360px;
+    }
+    .footer-img img{
+        width: 360px;
     }
 }
